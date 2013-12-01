@@ -1,0 +1,496 @@
+/********************************************
+Theme Name: pierreferre2011_rev
+Author: Pierre Ferre
+Author URI: http://pierreferre.com
+Theme URI: http://pierreferre.com/blog
+Description: A simple two columns theme
+Version: 1.0
+Tags: Two columns
+*********************************************/
+
+@import"wp.css";
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', Helvetica, Arial, Geneva, sans-serif;
+    font-size: 0.9em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+/*
+Default container. 
+*/
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Default link behaviour. 
+*/
+
+a, .entry-title {
+    text-decoration: none;
+    color: #d62200;
+}
+
+a:hover {
+    background-color: #f5c400;
+}
+
+/*
+Page header. 
+*/
+
+header {
+    width: 100%;
+    height: 4em;
+    background-color: #000;
+}
+
+header #sub_header {
+    width: 40%;
+    float: right;
+    color: #fff;
+    text-align: right;
+    margin-right: 10%;
+}
+
+header h1 {
+    float: left;
+    margin: 0px;
+    padding-left: 10%;
+}
+
+header h1#site_header a {
+    text-decoration: none;
+    font-size: 1.7em;
+    font-family: Georgia, serif;
+    color: #fff;
+}
+
+header h1#site_header a:hover {
+    color: #f5c400;
+	background-color: #000;
+}
+
+/*
+Site navigation just below the header box. 
+Containes the navigation bar and the search box. 
+*/
+
+nav  {
+    background-color: #000;
+    width: 100%;
+    height: 33px;
+}
+
+/*
+Wrapper/container which holds other elements
+*/
+
+nav .container {
+    float: left;
+    width: 49%;
+    margin-left: 10%;
+    padding-left: 15px;
+    background-color: #d62200;
+    border-radius: 0px 50px 0px 50px;
+    -webkit-border-radius: 0px 50px 0px 50px;
+    -moz-border-radius: 0px 50px 0px 50px;
+}
+
+nav .menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 5px;
+}
+
+nav .menu ul li {
+    display: inline;
+    padding: 5px;
+    border: 1px;
+    margin: 7px;
+}
+
+nav .menu ul li:hover {
+	background-color: #f5c400;
+}
+
+nav .menu ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 3px;
+}
+
+nav .menu ul a:hover {
+    color: #000;
+}
+
+nav .current_page_item {
+    background-color: #F5C400;
+}
+
+nav .current_page_parent {
+    background-color: #F5C400;
+}
+/*
+Search 
+*/
+
+nav .search {
+    float: right;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+
+nav .search #s  {
+    float: left;
+}
+
+nav .search #searchsubmit {
+    float: right;
+    margin-left: 5px;
+    background-color: #ddf;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+nav .search #searchsubmit:hover {
+    color: #d62200;
+}
+
+nav .search .screen-reader-text {
+    display: none;
+}
+
+/*
+Container for the content section. Content section will hold article elements which will feature blog posts. 
+*/
+
+#content .container {
+    float: left;
+    width: 50%;
+    margin-left: 10%;
+    font-size: 0.8em;
+}
+
+.container .entry-content {
+    width: 100%;
+}
+
+#content .container .entry-title {
+    border-bottom: 1px inset;
+    border-color: #000;
+}
+
+#content .container .entry-title a:hover {
+    color: #000;
+}
+
+article {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+article .entry-content textarea {
+    width: 90%;
+}
+
+span.entry-date {
+    font-style: italic;
+}
+
+/*
+Sits to the right of the content area. Holds the sidebar. 
+*/
+
+aside  {
+    width: 30%;
+    height: 100%;
+    float: right;
+    margin-right: 10%;
+    margin-left: 0;
+    color: #000;
+}
+
+.sidebar ul {
+    list-style: none;
+    font-size: 0.9em;
+    padding: 0px;
+}
+
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar .widget-title {
+    border-bottom: 1px solid;
+    background-color: #d62200;
+    color: #fff;
+}
+
+.sidebar .textwidget .twitter-follow-button {
+    font-weight: bold;
+}
+
+.sidebar ul li a img {
+    border: none;
+}
+
+.sidebar ul li a:hover {
+    color: #d62200;
+}
+
+.sidebar #left {
+    width: 40%;
+    height: 100%;
+    float: left;
+    padding: 0px;
+    margin-left: 16%;
+}
+
+.sidebar #right {
+    width: 40%;
+    height: 100%;
+    float: right;
+    padding: 0px;
+    margin-right: 0%;
+}
+
+/*
+Footer
+*/
+
+footer {
+    float: left;
+    margin: 0px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+footer .container {
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+
+footer .container #leftcol {
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+}
+
+footer .container #rightcol {
+    width: 45%;
+    float: right;
+    margin-right: 5%;
+}
+
+footer .container .paragraph_header_footer {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer .container .links {
+    padding: 0px;
+}
+
+footer .container .links li {
+    list-style: none;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    height: 16px;
+}
+
+footer .container .links li a {
+    padding-left: 5px;
+}
+
+/*
+Footer Icons
+*/
+
+footer .container .links .twitter_i {
+    background: url('images/twitter_16.png') no-repeat;
+}
+
+footer .container .links .skype {
+    background: url('images/skype_16.png') no-repeat;
+}
+
+footer .container .links .rss {
+    background: url('images/rss.png') no-repeat;
+}
+
+footer .container .links .lastfm {
+    background: url('images/lastfm_16.png') no-repeat;
+}
+
+/*
+I claim no right of ownership to the respective company logos and glyphs in each one of these icons.
+
+Logos & Icons can be found at the following links: 
+http://prothemedesign.com/circular-icons/ 
+http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/
+*/
+
+/*
+Comments
+*/
+
+.comments .commentlist {
+    list-style: none;
+}
+
+.comments .commentlist .children {
+    list-style: none;
+}
+
+#respond {
+    margin: 10px;
+}
+
+#respond label {
+    display: block;
+    font-weight: bold;
+}
+
+#respond .form-allowed-tags {
+    background-color: #E5E5E5;
+    padding: 5px;
+}
+
+#respond .form-submit #submit {
+    background-color: #ddf;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#respond .form-submit #submit:hover {
+    color: #d62200;
+}
+
+#respond .comment-form-author #author {
+    width: 100%;
+}
+
+#respond .comment-form-email #email {
+    width: 100%;
+}
+
+#respond .comment-form-url #url {
+    width: 100%;
+}
+
+#respond .comment-form-comment #comment {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+Media queries 
+*/
+
+@media handheld and (max-width: 480px), 
+    screen and (max-device-width: 480px), 
+    screen and (max-width: 900px) {
+        
+	body {
+		font-size: 1.2em;
+	}
+	
+	aside {
+		display: none;
+	}
+	
+	header {
+		height: 0;
+	}
+	
+	header .container {
+		width: 100%;
+	}
+	
+	header .container #sub_header {
+		display: none;
+	}
+	
+	header .container #site_header {
+		padding: 0px;
+		font-size: 0.9em;
+		width: 100%;
+		text-align: center;
+	}
+	
+	nav .search {
+		display: none;
+	}
+       
+        
+        nav .container {
+            width: 100%;
+            padding:0;
+            margin: 0;
+            border-radius: 0px 0px 0px 0px;
+            -webkit-border-radius: 0px 0px 0px 0px;
+            -moz-border-radius: 0px 0px 0px 0px;
+            font-size: 0.7em;
+        }
+        
+        nav .menu ul li {
+            margin: 0;
+            border: 0;
+        }
+        
+          
+	#content .container {
+		width: 96%;
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+  
+	.wpcf7-text {
+		width: 75%;
+	}
+	
+	footer {
+		font-size: 0.6em;
+	}
+	
+	footer .container {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	
+	footer .container #rightcol {
+		display: none;
+	}
+	
+	footer .container #leftcol {
+		width: 100%;
+	} 
+        
+}

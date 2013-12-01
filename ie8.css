@@ -1,0 +1,8 @@
+@import "ie.css";
+@import "wp.css";
+
+#content { clear: left; }
+#content .container { width: 50%; float: left; }
+nav .menu { width: 50%; }
+nav .search { width: 15%; }
+
